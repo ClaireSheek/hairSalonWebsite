@@ -1,3 +1,88 @@
-.border {
-    
+
+body {
+    display: inline;
+    max-width: 1000px;
+    margin: auto;
+    color: white;
+    background-color: rgb(216,192,208);
+}
+
+nav {
+    display: flex;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+section {
+    display: flex;
+    min-height: 400px;
+    padding: 20px 100px;
+    align-items: center;
+    justify-content: center;
+}
+section div {
+    margin: 50px;
+}
+
+section:nth-of-type(1) {
+    flex-direction: column;
+    background-image: url(./images/headerphoto.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section:nth-of-type(2) {
+    background-color:white;
+    color: black;
+
+}
+
+section:nth-of-type(3) {
+    background-image: url(./images/pexels-ali-pazani-2787341.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section:nth-of-type(4) {
+    background-color:white;
+    color: black;
+}
+
+section:nth-of-type(5) {
+    flex-direction: column;
+    background-image: url(./images/adam-winger-WXmHwPcFamo-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section:nth-of-type(6) {
+    flex-direction: column;
+    background-color:rgb(216,192,208);
+    color: white;
+}
+
+ul img {
+    width: 1em;
+    height: auto;
+    padding: 5px;
 }
