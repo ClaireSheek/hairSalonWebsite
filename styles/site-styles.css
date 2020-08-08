@@ -1,0 +1,164 @@
+
+@font-face {
+    font-family: gotham-light;
+    src: url(./Gotham-Font/Gotham-Light.otf) url(./Gotham-Font/GothamLight.ttf);
+}
+
+@font-face {
+    font-family: gotham-black;
+    src: url(./Gotham-Font/Gotham-Black.otf) url(./Gotham-Font/GothamBold.ttf);
+}
+
+body {
+    margin: auto;
+    color: white;
+    background-color: rgb(216,192,208);
+    font-family: gotham-light;
+}
+
+header {
+    display: flex;
+    height: 96px;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(232,156,44);
+    background-image: url(../images/headerphoto.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    padding: 50px 125px;
+}
+
+nav {
+    display: flex;
+    font-size: 1em;
+    justify-content: space-between;
+}
+
+a {
+    font: 1em;
+    padding: 20px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+footer * a {
+    color: white;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(232,156,44)
+}
+p{
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: .03em;
+    line-height: 1.8em;
+    text-transform: none;
+    color: rgba(0,0,0,.7);
+}
+
+h1 {
+    display: inline;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 8vw;
+    letter-spacing: -.05em;
+    line-height: .8em;
+    margin: 18px 0;
+}
+
+h2 {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 39px;
+    letter-spacing: -.02em;
+    line-height: 1em;
+    text-transform: none;
+    color: #281a17;
+}
+
+h3 {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    letter-spacing: .01em;
+    line-height: 1.8em;
+    text-transform: uppercase;
+    color: rgba(40,26,23,.8);
+}
+
+.white {
+    color: white;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+ul img {
+    width: 1em;
+    height: auto;
+    padding: 5px;
+}
+
+hr {
+    display: block;
+    width: 60vw;
+    border-color: rgb(232,156,44);
+    margin: 30px 0;
+}
+
+@media (max-width: 1000px) {
+    header {
+        height: 60px;
+        padding: 30px;
+    }
+    section {
+        padding: 3vw;
+    }
+    article {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 500px) {
+  main {
+      flex-direction: column;
+      margin: auto;
+  }
+  header {
+      height: 40px;
+      padding: 20px;
+  }
+  nav {
+      flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  article {
+      flex-direction: column;
+  }
+
+  h2 {
+      font-size: 6vw;
+  }
+}
