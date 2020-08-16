@@ -1,0 +1,48 @@
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: #E9E8E7;
+  font-size: 10vw;
+}
+
+article {
+  display: flex;
+  grid-gap: 2vw;
+  margin: 40px;
+}
+
+.imageBox {
+  max-height: 200px;
+  max-width: 250px;
+  margin: 2vh 0 6vh;
+}
+
+img {
+  vertical-align: center ;
+  max-height: auto;
+  max-width: 100%;
+}
+
+div > a {
+  color: rgb(232,156,44);
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  article {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 500px) {
+  .imageBox {
+    max-width: 90vw;
+    align-self: center;
+  }
+  article {
+    flex-direction: column;
+  }
+}

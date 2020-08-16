@@ -10,6 +10,7 @@ section {
     margin: auto;
 }
 aside {
+    display: block;
     text-align: center;
     background-color: #E9E8E7;
     padding: 20px;
@@ -20,21 +21,29 @@ aside > h2 {
     margin-bottom: 0;
 }
 
+.gallery {
+    flex-grow: 50;
+    max-width: 33vw;
+    max-height: 100vh; /* what I really wanted to do was set it so that's the aside's max-height would be that of it's sibling element (the section on the left), and the gallery could be a percentage of the aside.. however with the left section of the page being responsive instead of having a set height I couldn't figure it out. Is it even possible? I tried googling it. */
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
 h1 {
     color: #E9E8E7;
     font-size: 10vw;
+}
+
+h2 {
+    padding-top: 1.5em;
 }
 
 article {
     display: flex;
 }
 
-.gallery {
-    flex-grow: 50;
-    max-width: 33vw;
-    max-height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+div {
+    margin: auto 10px;
 }
 
   img {

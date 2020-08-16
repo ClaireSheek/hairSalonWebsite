@@ -1,0 +1,81 @@
+Hamburger Menu:
+
+HTML:
+      <header>
+        <div class="logo">logo</div>
+        <nav id="main-nav" class="main-nav">
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./pages/about.html">SERVICES</a></li>
+                <li><a href="./pages/gallery.html">OUR TEAM</a></li>
+                <li><a href="./pages/gallery.html">BLOG</a></li>
+                <li><a href="./pages/contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+CSS
+
+  header {
+    display: grid; 
+    grid-template-columns: 7vw 1fr 10fr 1fr 2vw; 
+    grid-template-rows: 70px auto; 
+    align-items: center; 
+    background-color: #f0f8ff;
+  }
+
+  .logo {
+    grid-column: 2;
+    width: 60px;
+  }
+
+  .main-nav {
+      display: none;
+      grid-column: 3;
+  }
+
+  .hamburger {
+      grid-column: 4; 
+      justify-self: end;
+  }
+
+  .main-nav ul { 
+      display: grid; 
+      grid-template-columns: repeat(5, 1fr); 
+      justify-items: center; 
+  }
+
+  .fa-bars { 
+      font-size: 1.4em; 
+  } 
+
+  @media
+    .main-nav { 
+      grid-row: 2; 
+      grid-column: 2 / 5; 
+      background-color: rgb(232,156,44); 
+    } 
+    .main-nav ul a { 
+        color: #fff; 
+    }
+
+    .main-nav ul { 
+        grid-template-columns: 1fr; 
+        height: calc(80vh - 70px); 
+        align-content: space-evenly; 
+    }
+
+JS 
+
+  /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu icon */ 
+function myFunction() { 
+  var x = document.getElementById("main-nav"); 
+  if (x.style.display === "grid") { 
+    x.style.display = "none"; } 
+    else { x.style.display = "grid"; } 
+  }

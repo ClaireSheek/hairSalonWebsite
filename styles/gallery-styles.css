@@ -1,0 +1,82 @@
+.main
+
+.title {
+  padding-top: 40px;
+  font-family: gotham-black;
+  font-weight: lighter;
+}
+h1 {
+  color: #E9E8E7;
+  font-size: 4em;
+  text-align: center;
+  margin: 1em;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.imageBox {
+  height: auto;
+  flex-grow: 1;
+  position: relative;
+  max-width: 25%;
+  margin: 10px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.imageBox:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text > h2, .text > h3 {
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .imageBox{
+    max-width: 40%;
+  }
+  h1 {
+    text-align: center;
+    line-height: 1em;
+  }
+}
+
+@media (max-width: 500px) {
+  .imageBox{
+    max-width: 70%;
+  }
+}
