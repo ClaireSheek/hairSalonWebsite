@@ -19,8 +19,30 @@
         </nav>
     </header>
     <main>
+        <section class="pageTitle">
+            <div>
+                <h1>Get in Touch</h1>
+            </div>
+            <hr>
+        </section>
         <section>
-            
+            <form action="contact-pages/results.html" method="GET" enctype="multipart/form-data">
+                <div>
+                  <label for="name">Name</label>
+                  <input type="text" name="name" id="name" >
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" >
+              </div>
+              <div class="comments">
+                <label for="comments">Comments</label><br>
+                <textarea id="comments" name="comments"></textarea>
+              </div>
+              <button class="button" type="reset">Reset</button>
+              <button class="button" type="submit">Submit</button>
+            </form>
+            <script src="scripts.js"></script>
         </section>
     </main>
     <footer>
