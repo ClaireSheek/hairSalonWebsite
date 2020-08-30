@@ -1,0 +1,47 @@
+.pageTitle {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: #E9E8E7;
+  font-size: 10vw;
+}
+
+form {
+  display: grid;
+  grid-gap: 8%;
+  grid-template-columns: repeat(2 1fr);
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  padding: 5% 5% 10%;
+  max-width: 900px;
+  height: fit-content;
+  background-color: rgb(192, 192, 192, 0.5);
+  color: #848486;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.comments {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+
+#comments {
+  width: 100%;
+  height: 150px;
+
+}
+
+
+@media (max-width: 768px) {
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 50px;
+  }
+}
